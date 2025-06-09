@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+.container{
+    width: 95%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 480px;
+    height: 500px;
+    background: rgb(48, 45, 46);
+    margin-top: 100px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.popup.active{
+    opacity: 1;
+    margin-top: 30px;
+    pointer-events: all;
+}
+
+
+.sharee i{
+    font-size: 52px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: rgb(15, 15, 15);
+    transition: .3s;
+}
+
+.sidebar.activee{
+    left:0;
+}

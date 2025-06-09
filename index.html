@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-neutral-950">
+    <header class="container p-[10px] flex items-center justify-between">
+        <div class="flex items-center gap-11 ">
+            <div>
+                <button onclick="sidebarFc()" class="p-[10px] cursor-pointer w-3">
+                    <i class="fa-solid fa-bars text-white text-[22px]"></i>
+                </button>
+            </div>
+
+            <div class="flex items-center gap-1">
+                <i class="fa-brands fa-youtube text-[33px] text-red-500"></i>
+                <span class="text-[20px] text-white">YouTube</span>
+            </div>
+        </div>
+
+        <div>
+            <form class="flex items-center">
+                <input class=" inputt p-[10px] border w-[500px] text-white  bg-gray-900   border-none rounded-tl-md rounded-bl-md"  type="text" name="search" placeholder="Search">
+                <button class="flex items-center justify-center  bg-gray-400 text-[20px] w-[50px] h-[44px] border-none rounded-tr-md rounded-br-md">
+                    <i class="fa-solid fa-magnifying-glass text-[white] "></i>
+                </button>
+            </form>
+        </div>
+
+        <div class="flex items-center gap-5">
+            <button class="text-[16px] p-[5px]  bg-slate-400 rounded-md text-white">
+                <i class="fa-solid fa-plus"></i>
+                Create
+            </button>
+
+            <i class="fa-solid fa-bell text-[24px] text-white"></i>
+        </div>
+    </header>
+
+    <main class="container  pt-[30px] flex gap-7 ">
+           <div>
+            <iframe class="rounded-md"  iframe width="1000" height="550"
+            src="https://www.youtube.com/embed/ttDbSrXnCH4?si=zj9TNAwBcTzg80Tq"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+
+    
+        <div class="flex items-center gap-[165px] pt-5">
+            <div>
+                <p class="text-white text-[24px]">Cristiano Ronaldo skills 2008 Ballon Dor</p>
+            </div>
+    
+            <div class="flex items-center gap-3">
+                <div class="text-white  items-center bg-slate-400 block w-xs text-center p-[6px] rounded-xl">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <button>100K</button>
+                    <i class="fa-solid fa-thumbs-down"></i>
+                </div>
+                    
+                <div class="flex items-center  bg-slate-400 p-[6px] rounded-xl gap-2">
+                    <i class="fa-solid fa-share text-white"></i>
+                    <button onclick="togglePopup()" class=" text-white">Share</button>
+                </div>
+    
+                <div class="flex items-center bg-slate-400 rounded-xl p-[6px] gap-1 ">
+                    <i class="fa-solid fa-download text-white" ></i>
+                    <button class="text-[14px] text-white">fa-downloaded</button>
+                </div>
+    
+                <div class="flex items-center gap-1 p-[6px]  bg-slate-400 rounded-xl">
+                    <i class="fa-solid fa-bookmark text-white"></i>
+                    <button class="text-white text-[14px]">Save</button>
+                </div>
+    
+    </div>
+            
+
+        </div>
+
+    <div class="popup  rounded-xl  p-[6px] cursor-pointer ">
+        <div class="text-right">
+            <i onclick="togglePopup()" class="fa-solid fa-x text-white"></i>
+
+        </div>
+        <div class="text-center pt-5 text-2xl text-white">
+            <h5>Share</h5>
+
+            <div class="sharee flex items-center justify-center gap-[20px] pt-4">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-brands fa-viber"></i>
+
+            </div>
+        </div>
+    </div>
+
+           </div>
+
+    <div class="flex flex-col gap-[20px]">
+        <iframe class="rounded-md" width="180" height="100" src="https://www.youtube.com/embed/pbYrY_ZwWn8?si=YBDwljsGUIgJvnjm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="rounded-md" width="180" height="100" src="https://www.youtube.com/embed/Fd7s3QWi7eo?si=feAQM-CaYnoNAIFS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="rounded-md" width="180" height="100" src="https://www.youtube.com/embed/rv-HeE1va9k?si=vnl0BAUEhuE5NpfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="rounded-md" width="180" height="100" src="https://www.youtube.com/embed/LVc8lZISvfw?si=gOzi6UYziR8DBsBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="rounded-md" width="180" height="100" src="https://www.youtube.com/embed/7yU1zL5PWlQ?si=vIqblUMW8OrPxyDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>       
+
+
+    </main>
+
+    <div class="sidebar ">
+       <div class="container p-4 flex items-center gap-4">
+        <div class="">
+            <button onclick="sidebarFc()">
+                <i class="fa-solid fa-bars text-white text-[24px]"></i>
+            </button>
+        </div>
+        <div class="flex items-center gap-1">
+            <i class="fa-brands fa-youtube text-[33px] text-red-500"></i>
+            <span class="text-[20px] text-white">YouTube</span>
+        </div>
+       </div>
+
+       <div class="flex-col flex gap-5 p-3">
+       <div class="flex items-center gap-2">
+        <i class="text-[24px] text-white fa-solid fa-house"></i>
+        <p class="text-[20px] text-white">Home</p>
+       </div>
+       <div class="flex items-center gap-2">
+        <i class="text-[24px] text-white fa-solid fa-heart"></i>
+        <p class="text-[20px] text-white">Shorts</p>
+       </div>
+        <div class="flex items-center gap-2">
+            <i class="text-[24px] text-white fa-solid fa-headphones"></i>
+            <p class="text-[20px] text-white">Subscriptions</p>
+        </div>
+        <div class="flex items-center gap-2">
+            <i class="text-[24px] text-white fa-solid fa-clock-rotate-left"></i>
+            <p class="text-[20px] text-white">History</p>
+        </div>
+        <div class="flex items-center gap-2">
+            <i class="text-[24px] text-white fa-solid fa-gamepad"></i>
+            <p class="text-[20px] text-white">Playlists</p>
+        </div>
+        <div class="flex items-center gap-2">
+            <i class="text-[24px] text-white fa-solid fa-thumbs-up"></i>
+            <p class="text-[20px] text-white">Liked</p>
+        </div>
+        <div class="flex items-center gap-2">
+            <i class="text-[24px] text-white fa-solid fa-download"></i>
+            <p class="text-[20px] text-white">Downloaded</p>
+        </div>
+       </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
