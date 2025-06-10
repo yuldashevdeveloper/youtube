@@ -1384,6 +1384,10 @@ video {
   gap: 0.75rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
@@ -1392,16 +1396,12 @@ video {
   gap: 1.75rem;
 }
 
-.gap-\[165px\] {
-  gap: 165px;
+.gap-\[160px\] {
+  gap: 160px;
 }
 
 .gap-\[20px\] {
   gap: 20px;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1893,6 +1893,11 @@ video {
   background-color: rgb(148 163 184 / var(--tw-bg-opacity, 1));
 }
 
+.bg-slate-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity, 1));
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2003,6 +2008,18 @@ video {
      object-fit: scale-down;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
 .p-\[10px\] {
   padding: 10px;
 }
@@ -2013,18 +2030,6 @@ video {
 
 .p-\[6px\] {
   padding: 6px;
-}
-
-.p-2 {
-  padding: 0.5rem;
-}
-
-.p-4 {
-  padding: 1rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .px-1 {
@@ -2121,6 +2126,10 @@ video {
 
 .text-\[16px\] {
   font-size: 16px;
+}
+
+.text-\[19px\] {
+  font-size: 19px;
 }
 
 .text-\[20px\] {
@@ -2233,10 +2242,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\] {
-  color: ;
 }
 
 .underline {
@@ -2651,6 +2656,24 @@ body{
 
 .sidebar.activee{
   left:0;
+}
+
+.modal{
+  position: fixed;
+  width: 240px;
+  height: 150px;
+  background-color: rgb(35, 34, 34);
+  top: 0;
+  right: 30px;
+  margin-top: 49px;
+  border: none;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.modal.m_active{
+  opacity: 1;
 }
 
 @media (min-width: 640px) {

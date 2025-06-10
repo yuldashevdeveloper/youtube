@@ -52,3 +52,21 @@ body{
 .sidebar.activee{
     left:0;
 }
+
+.modal{
+    position: fixed;
+    width: 240px;
+    height: 150px;
+    background-color: rgb(35, 34, 34);
+    top: 0;
+    right: 30px;
+    margin-top: 49px;
+    border: none;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.modal.m_active{
+    opacity: 1;
+}
